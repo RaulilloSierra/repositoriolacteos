@@ -5,19 +5,21 @@ package ProductosLacteos;
  *
  * @author Raul Jesus Sierra
  */
-public class Lacteos {
+public class Lacteos {//atributos
     public String Producto;
     public int Precio, Cantidad;
     
-    public Lacteos(){
+    public Lacteos(){//por defecto
     }
-    public Lacteos (String Producto, int Precio, int Cantidad){
+    public Lacteos (String Producto, int Precio, int Cantidad){//sobrecarga y super 
         super();
         this.Producto=Producto;
         this.Precio=Precio;
         this.Cantidad=Cantidad;
     }
-    
+    /*
+    A contiancion se programan los objetos setter y getter
+    */
     public void setProducto(String Producto){
         this.Producto=Producto;
     }

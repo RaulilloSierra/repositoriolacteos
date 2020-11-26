@@ -7,18 +7,21 @@ package ProductosLacteos;
  */
 
 
-public class Producto1 extends Lacteos {
+public class Producto1 extends Lacteos {// atributos indicando la herencia de la clase prinicpal
     protected String Color, Sabor, Presentacion;
     protected int Costo;
-    public Producto1(){
+    public Producto1(){//por defecto
     }
-    public Producto1(String Producto, int Precio, int Cantidad, String Color, String Sabor, int Costo, String Presentacion){
-        super(Producto, Precio, Cantidad);
+    public Producto1(String Producto, int Precio, int Cantidad, String Color, String Sabor, int Costo, String Presentacion){//sobre carga
+        super(Producto, Precio, Cantidad);//a través del super se hereda los atributos de la clase Lacteos
         this.Color=Color;
         this.Sabor=Sabor;
         this.Costo=Costo;
         this.Presentacion=Presentacion;
     }
+    /*
+    se añaden los getter y setter
+    */
     public void setColor(String Color){
         this.Color=Color;
     }
@@ -43,7 +46,7 @@ public class Producto1 extends Lacteos {
     public int getCosto(){
         return Costo;
     }
-    public void imprimirProducto1(){
+    public void imprimirProducto1(){//para imprimir
         Producto1 pr = new Producto1();
         pr.setProducto("Yogur");
         pr.setColor("Rojo");
