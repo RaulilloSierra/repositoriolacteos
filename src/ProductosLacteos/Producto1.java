@@ -1,0 +1,60 @@
+
+package ProductosLacteos;
+
+/**
+ *
+ * @author Raul Jesus Sierra
+ */
+
+
+public class Producto1 extends Lacteos {
+    protected String Color, Sabor, Presentacion;
+    protected int Costo;
+    public Producto1(){
+    }
+    public Producto1(String Producto, int Precio, int Cantidad, String Color, String Sabor, int Costo, String Presentacion){
+        super(Producto, Precio, Cantidad);
+        this.Color=Color;
+        this.Sabor=Sabor;
+        this.Costo=Costo;
+        this.Presentacion=Presentacion;
+    }
+    public void setColor(String Color){
+        this.Color=Color;
+    }
+    public String getColor(){
+        return Color;
+    }
+    public void setSabor(String Sabor){
+        this.Sabor=Sabor;
+    }
+    public String getSabor(){
+        return Sabor;
+    }
+    public void setPresentacion(String Presentacion){
+        this.Presentacion=Presentacion;
+    }
+    public String getPresentacion(){
+        return Presentacion;
+    }
+    public void setCosto(int Costo){
+        this.Costo=Costo;
+    }
+    public int getCosto(){
+        return Costo;
+    }
+    public void imprimirProducto1(){
+        Producto1 pr = new Producto1();
+        pr.setProducto("Yogur");
+        pr.setColor("Rojo");
+        pr.setSabor("Frutos rojos");
+        pr.setPresentacion("Vaso 250 ml");
+        pr.setCantidad(250);
+        pr.setCosto(250);
+        pr.setPrecio(600);
+        System.out.println("Nombre del producto: "+pr.getProducto()+"\nColor: "+pr.getColor()+"\nSabor: "+pr.getSabor()+"\nPresentacion: "+pr.getPresentacion()+"\nCantidad en Bodega: "+pr.getCantidad());
+        System.out.println("Costo: "+pr.getCosto()+"\nPrecio de Venta: "+pr.getPrecio()+"\n");
+    }
+    
+
+ }
